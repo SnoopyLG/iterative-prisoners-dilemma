@@ -222,21 +222,20 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
 
 
     ######
-    ######        
+    #Nestor_Kenny       
     #
     elif player == 5:
         if getting_team_name:
-            return 'Mr. Nice Guy'            
-        else:            
+            return 'Mr. Nice Guy'
+        else:
+            
             if len(opponent_history)==0: 
-                return 'b'
+                return 'c'
             elif history[-1]=='c' and opponent_history[-1]=='b':
-                return 'c' 
+                return 'b' 
             else:
-                if random.random()<0.1: 
-                    return 'b'         
-                else:
-                    return 'b'    
+                return 'b' 
+    
     
     
     
